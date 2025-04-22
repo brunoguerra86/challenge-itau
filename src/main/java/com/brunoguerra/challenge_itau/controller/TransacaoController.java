@@ -22,4 +22,10 @@ public class TransacaoController {
         transacaoService.adicionarTransacao(transacao);
     }
 
+    @DeleteMapping
+    @ResponseStatus(HttpStatus.OK)
+    public void limparTransacoes() {
+        transacaoService.limparTransacoes();
+    }
+
 }
