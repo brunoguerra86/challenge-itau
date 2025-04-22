@@ -28,4 +28,9 @@ public class TransacaoController {
         transacaoService.limparTransacoes();
     }
 
+    @GetMapping("/estatistica")
+    public TransacaoService.Estatistica obterEstatisticas() {
+        return transacaoService.calcularEstatisticas();
+    }
+
 }
